@@ -1,7 +1,6 @@
-const logger = require('./logger');
 
-console.log(logger);
+const path = require('path');
 
-logger.log('message');
+var pathObj = path.parse(__filename);;
 
-// jshint can be used to lint
+console.log(pathObj);
